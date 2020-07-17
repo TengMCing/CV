@@ -1,0 +1,70 @@
+---
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+\normalsize
+
+# CURRICULUM VITAE: Weihao Li \qquad \qquad \qquad 2020
+
+\qquad Student of Bachelor of Commerce (Honours) in Econometrics
+
+\qquad Department of Econometrics and Business Statistics, **Monash University**
+
+\qquad \textit{Tel: +61 404 591219}
+
+\qquad \textit{Email}: wlii0039@student.monash.edu
+
+## PROFILE
+
+- Passionate Honours student with a creative mind and solid research skills. 
+
+- Rich experience in data processing and modelling, using R and Python. Additional experience in neural network design using Tensorflow and Keras.
+
+- Computer skills: HTML, LaTex; Pascal; SQL; Git
+
+## EDUCATION
+
+\qquad \textbf{Monash University, Melbourne, Australia}
+
+\qquad Bcom. (Hons) Econometrics,  Dec 2020 (expected)
+
+\qquad Bcom. Business Analytics,  Dec 2019 (GPA: 3.5/4.0)
+
+
+\qquad \textbf{Guangdong University of Finance, Guangzhou, P.R. China}
+
+\qquad B.Fin. Finance, Jun 2020 (GPA: 3.4/4.0) 
+
+
+## RESEARCH INTEREST
+
+- Applications of machine learning in business, economic and environment 
+
+- Computer vision and Natural Language Processing
+
+- Reinforcement learning
+
+- Bayesian machine learning 
+
+## RESEARCH EXPERIENCE
+
+**Monash University**, Melbourne, Australia
+
+**Honours student**, 2020-present
+
+- Analyse 2019-2020 Australian bushfires using remote sensing data
+
+Honours degree research project, supervised by Prof Di Cook and Emily Dodwell. Performed exploratory data analysis on historical bushfires and 2019-2020 bushfires with the weather, vegetation and anthropogenic factors. Developed a clustering algorithm to track bushfires from satellite hotspots data remotely. Proposed models predicting the cause of bushfire ignition during 2019-2020 Australian bushfire season. Conducted comparison of prediction between statistical models and computational models. Established a dynamic model predicting fire risk in the neighbourhood using satellite hotspots data. Integrated research outcome into an interactive web application for the purpose of general use.
+
+## PUBLICATIONS
+
+- Li, W., Dodwell, E., Cook, D.. A clustering algorithm to organize satellite hotspots data for the purpose of tracking bushfires remotely (in preparation)
+
+
+## GRANTS
+
+Econometrics Honours Memorial Scholarship, Monash University, (2020) $15,000
