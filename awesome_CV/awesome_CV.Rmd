@@ -1,0 +1,98 @@
+---
+name: Weihao Li
+date: "July, 2020"
+qualifications: BCom(Hons), BSc
+address: Clayton, Victoria, Australia
+phone: +61 404 591 219
+email: wlii0039@student.monash.edu
+github: TengMCing
+headcolor: 414141
+output: vitae::awesomecv
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tidyverse)
+```
+
+# Education
+
+```{r education}
+tribble(
+  ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
+  "BCom (Hons) in Econometrics", "Monash University", "Clayton, Australia", "Mar. 2020 - Nov. 2020 (expected)", "Studied units include collaborative and reproducible practices, Bayesian and frequentist econometrics and exploratory data analysis.",
+  "BCom in Business Analytics",  "Monash University", "Clayton, Australia", "Mar. 2018 - Nov. 2019", "GPA: 3.5/4.0.",
+  "BCom in Business Analytics",  "Monash University", "Clayton, Australia", "Mar. 2018 - Nov. 2019", "Over 90/100 for 2 units: Algorithms and Programming in Python and Derivatives.",
+  "BCom in Business Analytics",  "Monash University", "Clayton, Australia", "Mar. 2018 - Nov. 2019", "Studied a variety of units covering different aspects of data analysis include data access, cleaning, visualization and modelling.",
+  "BCom in Business Analytics",  "Monash University", "Clayton, Australia", "Mar. 2018 - Nov. 2019", "Minored in Finance enhanced my investment analysis skills in currency, equity, debt and derivatives markets.",
+  "BFin in Finance",  "Guangdong University of Finance", "Guangzhou, China", "Sep. 2015 - Jun. 2020", 'GPA: 3.4/4.0',
+  "BFin in Finance",  "Guangdong University of Finance", "Guangzhou, China", "Sep. 2015 - Jun. 2020", 'Best in class for 4 units: Microeconomics, Fundamentals of Finance, Human Resources Management and Managing Intercultural Communication') %>% 
+  detailed_entries(degree, dates, uni, loc, details)
+```
+
+# Grants
+
+```{r}
+tribble(
+  ~ grants, ~ amount, ~ dates,
+  "Econometrics Honours Memorial Scholarship, Monash University", "$15,000", "2020") %>% 
+  brief_entries(grants, dates, amount)
+```
+
+
+# Research interest
+
+\footnotesize
+\begin{itemize}
+  \item Applications of machine learning in business, finance, economic and environmental science
+  \item Computer vision and Natural Language Processing
+  \item Data visualization
+  \item Bayesian machine learning
+\end{itemize}
+
+\normalsize
+
+# Research experience
+
+## Analyse 2019-2020 Australian bushfires using remote sensing data
+
+## Monash University, 2020-present
+
+\footnotesize
+
+- Honours degree research project, supervised by Prof Di Cook and Emily Dodwell
+
+
+This research project was using remote sensing data to understand the cause of 2019-2020 bushfires ignition and predict the fire risk in the neighbourhood. Developed a clustering algorithm to track bushfires from satellite hotspots data remotely. Proposed both statistical and computational models incorporating weather, vegetation and anthropogenic factors to predict the cause of bushfire ignition during 2019-2020 Australian bushfire season, which was unknown at the moment. Established a dynamic model predicting short-term fire risk in the neighbourhood primarily using satellite hotspots data. This allowed fast prediction in the condition of lack of field observations.
+
+\normalsize
+
+# Data analysis projects
+
+```{r}
+tribble(
+  ~ com, ~ uni, ~ loc, ~ dates, ~ details,
+  "Predicting Wikipedia Daily Click Volume", "Deep Learning Project", "2019", "", "Used deep learning to predict the next year daily click volume of a Wikipedia website given the data of the previous 500 days.",
+  "Predicting Wikipedia Daily Click Volume", "Deep Learning Project", "2019", "", "Tested different deep learning architectures include pure Fully Connected neural network, LSTM, GRU and 1D Convolution neural network for this time-series task.",
+  "Predicting Wikipedia Daily Click Volume", "Deep Learning Project", "2019", "", "Tuned Hyperparameters using cross-validated grid-search.",
+  "Predicting Wikipedia Daily Click Volume", "Deep Learning Project", "2019", "", "Prediction performance was much better than ETS and ARIMA in most of the cases.",
+  "Predicting How Points End in Tennis", "InClass Kaggle Competition", "2019", "", "Used machine learning algorithms to predict outcome categories of tennis points given 3D coordinates of the ball position and 2D coordinates of the player position throughout a match.",
+  "Predicting How Points End in Tennis", "InClass Kaggle Competition", "2019", "", "Applied ensemble learning to aggregate the prediction of several neural networks, XGBoost, CatBoost and Random forests models which are trained independently.",
+  "Predicting How Points End in Tennis", "InClass Kaggle Competition", "2019", "", "Top 10 of the private leaderboard",
+  "Modelling And Predicting The Performance Of Portfolios Consisting of ASX200 Stocks", "Financial Econometrics Project", "2019", "", "Used ARIMA-ARCH-type models to predict the log return and volatility of portfolios given the past performance.",
+  "Modelling And Predicting The Performance Of Portfolios Consisting of ASX200 Stocks", "Financial Econometrics Project", "2019", "", "Successfully constructed a hypothetical portfolio with a high Sharpe ratio and passed a 3-months review.",
+  "Data Analysis Of Melbourne Airbnb Market", "Data Modelling Project", "2018", "", "Used classical regression models to explore the factors affecting Melbourne Airbnb price and rating."  ) %>% 
+  detailed_entries(uni, dates, com, loc, details)
+```
+
+
+
+
+# Publications
+
+```{r}
+bibliography_entries("Weihao_Li.bib")
+```
+
+
