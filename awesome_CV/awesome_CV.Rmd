@@ -27,7 +27,7 @@ tribble(
   "BCom in Business Analytics",  "Monash University", "Clayton, Australia", "Mar. 2018 - Nov. 2019", "Studied a variety of units covering different aspects of data analysis include data access, cleaning, visualization and modelling.",
   "BCom in Business Analytics",  "Monash University", "Clayton, Australia", "Mar. 2018 - Nov. 2019", "Minored in Finance enhanced my investment analysis skills in currency, equity, debt and derivatives markets.",
   "BFin in Finance",  "Guangdong University of Finance", "Guangzhou, China", "Sep. 2015 - Jun. 2020", 'GPA: 3.4/4.0',
-  "BFin in Finance",  "Guangdong University of Finance", "Guangzhou, China", "Sep. 2015 - Jun. 2020", 'Best in class for 4 units: Microeconomics, Fundamentals of Finance, Human Resources Management and Managing Intercultural Communication') %>% 
+  "BFin in Finance",  "Guangdong University of Finance", "Guangzhou, China", "Sep. 2015 - Jun. 2020", 'Best in class for 4 units: Microeconomics, Fundamentals of Finance, Human Resources Management and Managing Intercultural Communication.') %>% 
   detailed_entries(degree, dates, uni, loc, details)
 ```
 
@@ -79,7 +79,7 @@ tribble(
   "Predicting Wikipedia Daily Click Volume", "Deep Learning Project", "2019", "", "Prediction performance was much better than ETS and ARIMA in most of the cases.",
   "Predicting How Points End in Tennis", "InClass Kaggle Competition", "2019", "", "Used machine learning algorithms to predict outcome categories of tennis points given 3D coordinates of the ball position and 2D coordinates of the player position throughout a match.",
   "Predicting How Points End in Tennis", "InClass Kaggle Competition", "2019", "", "Applied ensemble learning to aggregate the prediction of several neural networks, XGBoost, CatBoost and Random forests models which are trained independently.",
-  "Predicting How Points End in Tennis", "InClass Kaggle Competition", "2019", "", "Top 10 of the private leaderboard",
+  "Predicting How Points End in Tennis", "InClass Kaggle Competition", "2019", "", "Top 10 of the private leaderboard.",
   "Modelling And Predicting The Performance Of Portfolios Consisting of ASX200 Stocks", "Financial Econometrics Project", "2019", "", "Used ARIMA-ARCH-type models to predict the log return and volatility of portfolios given the past performance.",
   "Modelling And Predicting The Performance Of Portfolios Consisting of ASX200 Stocks", "Financial Econometrics Project", "2019", "", "Successfully constructed a hypothetical portfolio with a high Sharpe ratio and passed a 3-months review.",
   "Data Analysis Of Melbourne Airbnb Market", "Data Modelling Project", "2018", "", "Used classical regression models to explore the factors affecting Melbourne Airbnb price and rating."  ) %>% 
@@ -92,7 +92,7 @@ tribble(
 ```{r}
 tribble(
   ~ com, ~ uni, ~ loc, ~ dates, ~ details,
-  "R workshops for Beginners", "Helper", "2019", "", "A series of student ran workshops on data analysis in R",
+  "R workshops for Beginners", "Helper", "2019", "", "A series of student ran workshops on data analysis in R.",
   "R workshops for Beginners", "Helper", "2019", "", "Workshop topics include introduction to R, Rstudio and Rmarkdown, data visualization in ggplot2, data types and import data in R, data wrangling with dplyr and handling missing data with naniar.") %>% 
   detailed_entries(uni, dates, com, loc, details)
 ```
