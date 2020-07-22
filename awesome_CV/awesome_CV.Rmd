@@ -22,7 +22,7 @@ library(tidyverse)
 tribble(
   ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
   "BCom (Hons) in Econometrics", "Monash University", "Clayton, Australia", "Mar. 2020 - Nov. 2020 (expected)", "Studied units include collaborative and reproducible practices, Bayesian and frequentist econometrics and exploratory data analysis.",
-  "BCom in Business Analytics",  "Monash University", "Clayton, Australia", "Mar. 2018 - Nov. 2019", "GPA: 3.5/4.0.",
+  "BCom in Business Analytics",  "Monash University", "Clayton, Australia", "Mar. 2018 - Nov. 2019", "GPA: 3.5/4.0",
   "BCom in Business Analytics",  "Monash University", "Clayton, Australia", "Mar. 2018 - Nov. 2019", "Over 90/100 for 2 units: Algorithms and Programming in Python and Derivatives.",
   "BCom in Business Analytics",  "Monash University", "Clayton, Australia", "Mar. 2018 - Nov. 2019", "Studied a variety of units covering different aspects of data analysis include data access, cleaning, visualization and modelling.",
   "BCom in Business Analytics",  "Monash University", "Clayton, Australia", "Mar. 2018 - Nov. 2019", "Minored in Finance enhanced my investment analysis skills in currency, equity, debt and derivatives markets.",
