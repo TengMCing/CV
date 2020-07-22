@@ -31,7 +31,7 @@ tribble(
   detailed_entries(degree, dates, uni, loc, details)
 ```
 
-# Grants
+# Awards
 
 ```{r}
 tribble(
@@ -55,7 +55,7 @@ tribble(
 
 # Research experience
 
-## Analyse 2019-2020 Australian bushfires using remote sensing data
+## Using Remote Sensing Data to Understand Fire Ignition During the 2019-2020 Australian Bushfire Season
 
 ## Monash University, 2020-present
 
@@ -64,7 +64,7 @@ tribble(
 - Honours degree research project, supervised by Prof Di Cook and Emily Dodwell
 
 
-This research project was using remote sensing data to understand the cause of 2019-2020 bushfires ignition and predict the fire risk in the neighbourhood. Developed a clustering algorithm to track bushfires from satellite hotspots data remotely. Proposed both statistical and computational models incorporating weather, vegetation and anthropogenic factors to predict the cause of bushfire ignition during 2019-2020 Australian bushfire season, which was unknown at the moment. Established a dynamic model predicting short-term fire risk in the neighbourhood primarily using satellite hotspots data. This allowed fast prediction in the condition of lack of field observations.
+This project was using remote sensing data to understand the cause of 2019-2020 bushfires ignition and predict the fire risk in the neighbourhood. Developed a clustering algorithm to track bushfires from satellite hotspots data remotely. Proposed both statistical and computational models incorporating weather, vegetation and anthropogenic factors to predict the cause of bushfire ignition during 2019-2020 Australian bushfire season, which was unknown at the moment. Established a dynamic model predicting short-term fire risk in the neighbourhood primarily using satellite hotspots data. This allowed fast prediction in the condition of lack of field observations.
 
 \normalsize
 
@@ -87,6 +87,15 @@ tribble(
 ```
 
 
+# Volunteer activities
+
+```{r}
+tribble(
+  ~ com, ~ uni, ~ loc, ~ dates, ~ details,
+  "R workshops for Beginners", "Helper", "2019", "", "A series of student ran workshops on data analysis in R",
+  "R workshops for Beginners", "Helper", "2019", "", "Workshop topics include introduction to R, Rstudio and Rmarkdown, data visualization in ggplot2, data types and import data in R, data wrangling with dplyr and handling missing data with naniar.") %>% 
+  detailed_entries(uni, dates, com, loc, details)
+```
 
 
 # Publications
