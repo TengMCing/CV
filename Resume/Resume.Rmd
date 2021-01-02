@@ -6,7 +6,6 @@ address: Clayton, Victoria, Australia
 phone: +61 404 591 219
 email: wlii0039@student.monash.edu
 github: TengMCing
-headcolor: 414141
 output: vitae::awesomecv
 ---
 
@@ -22,13 +21,28 @@ Sys.setlocale("LC_ALL","English")
 ```{r education}
 tribble(
   ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
-  "BCom (Hons) in Econometrics", "Monash University", "Clayton, Australia", "Mar. 2020 - Nov. 2020 (expected)", "Studied units include collaborative and reproducible practices, Bayesian and frequentist econometrics and exploratory data analysis.",
-  "BCom in Business Analytics",  "Monash University", "Clayton, Australia", "Mar. 2018 - Nov. 2019", "GPA: 3.5/4.0",
-  "BCom in Business Analytics",  "Monash University", "Clayton, Australia", "Mar. 2018 - Nov. 2019", "Over 90/100 for 2 units: Algorithms and Programming in Python and Derivatives.",
-  "BCom in Business Analytics",  "Monash University", "Clayton, Australia", "Mar. 2018 - Nov. 2019", "Studied a variety of units covering different aspects of data analysis include data access, cleaning, visualization and modelling.",
+  
+  
+# Honours
+  "BCom (Hons) in Econometrics", "Monash University", "Clayton, Australia", "Mar. 2020 - Dec. 2020", "First Class Honours, GPA: 3.9/4.0",
+  
+  "BCom (Hons) in Econometrics", "Monash University", "Clayton, Australia", "Mar. 2020 - Dec. 2020", "Honours research project was to develop a spatiotemporal clustering algorithm for accurately identifing bushfire ignition locations from satellite hotspot data and a machine learning model for predicting causes of 2019-2020 Victorian bushfires.",
+  
+  "BCom (Hons) in Econometrics", "Monash University", "Clayton, Australia", "Mar. 2020 - Dec. 2020", "Studied units include collaborative and reproducible practices, Bayesian and frequentist econometrics and exploratory data analysis.",
+  
+
+# Bachelor of Commerce
+  "BCom in Business Analytics",  "Monash University", "Clayton, Australia", "Mar. 2018 - Nov. 2019", "High Distinction, GPA: 3.5/4.0",
+  
+  "BCom in Business Analytics",  "Monash University", "Clayton, Australia", "Mar. 2018 - Nov. 2019", "Studied a variety of units covering different aspects of data analysis include data access, management, cleaning, visualization and modelling.",
+  
   "BCom in Business Analytics",  "Monash University", "Clayton, Australia", "Mar. 2018 - Nov. 2019", "Minored in Finance enhanced my investment analysis skills in currency, equity, debt and derivatives markets.",
+  
+
+# Bachelor of Finance
   "BFin in Finance",  "Guangdong University of Finance", "Guangzhou, China", "Sep. 2015 - Jun. 2020", 'GPA: 3.4/4.0',
-  "BFin in Finance",  "Guangdong University of Finance", "Guangzhou, China", "Sep. 2015 - Jun. 2020", 'Best in class for 4 units: Microeconomics, Fundamentals of Finance, Human Resources Management and Managing Intercultural Communication.') %>% 
+
+  "BFin in Finance",  "Guangdong University of Finance", "Guangzhou, China", "Sep. 2015 - Jun. 2020", 'Studied foundation courses in commerce and finance.') %>% 
   detailed_entries(degree, dates, uni, loc, details)
 ```
 
@@ -42,32 +56,27 @@ tribble(
 ```
 
 
-# Research interest
+<!-- # Research interest -->
 
-\footnotesize
-\begin{itemize}
-  \item Applications of machine learning in business, finance, economic and environmental science
-  \item Computer vision and Natural Language Processing
-  \item Data visualization
-  \item Bayesian machine learning
-\end{itemize}
+<!-- \footnotesize -->
+<!-- \begin{itemize} -->
+<!--   \item Applications of machine learning in business, finance, economic and environmental science -->
+<!--   \item Computer vision and Natural Language Processing -->
+<!--   \item Data visualization -->
+<!--   \item Bayesian machine learning -->
+<!-- \end{itemize} -->
 
 \normalsize
 
 # Research experience
 
-## Using Remote Sensing Data to Understand Fire Ignition During the 2019-2020 Australian Bushfire Season
+```{r}
 
-## Monash University, 2020-present
-
-\footnotesize
-
-- Honours degree research project, supervised by Prof Di Cook and Emily Dodwell
-
-
-This project was using remote sensing data to understand the cause of 2019-2020 bushfires ignition and predict the fire risk in the neighbourhood. Developed a clustering algorithm to track bushfires from satellite hotspots data remotely. Proposed both statistical and computational models incorporating weather, vegetation and anthropogenic factors to predict the cause of bushfire ignition during 2019-2020 Australian bushfire season, which was unknown at the moment. Established a dynamic model predicting short-term fire risk in the neighbourhood primarily using satellite hotspots data. This allowed fast prediction in the condition of lack of field observations.
-
-\normalsize
+tribble(
+  ~ name, ~ when, ~ role, ~ details,
+  "Using Remote Sensing Data to Understand Fire Ignitions in Victoria during the 2019-2020 Australian Bushfire Season", "2020", "Author", "Honours degree research project, supervised by Prof Di Cook and Emily Dodwell") %>%
+  brief_entries(glue::glue("\\textbf{<name>} \\newline <details>", .open = "<", .close = ">"), when, .protect = FALSE)
+```
 
 # Data analysis projects
 
@@ -99,10 +108,10 @@ tribble(
 ```
 
 
-# Publications
+<!-- # Publications -->
 
-```{r}
-bibliography_entries("Weihao_Li.bib")
-```
+<!-- ```{r} -->
+<!-- bibliography_entries("Weihao_Li.bib") -->
+<!-- ``` -->
 
 
