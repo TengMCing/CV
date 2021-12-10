@@ -1,10 +1,10 @@
 ---
 name: Weihao Li
-date: "July, 2020"
+date: "Dec, 2021"
 qualifications: BCom(Hons), BSc
 address: Clayton, Victoria, Australia
 phone: +61 404 591 219
-email: wlii0039@student.monash.edu
+email: patrick.li@monash.edu
 github: TengMCing
 output: vitae::awesomecv
 ---
@@ -13,7 +13,7 @@ output: vitae::awesomecv
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(vitae)
 library(tidyverse)
-Sys.setlocale("LC_ALL","English")
+# Sys.setlocale("LC_ALL","English")
 ```
 
 # Education
@@ -22,6 +22,8 @@ Sys.setlocale("LC_ALL","English")
 tribble(
   ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
   
+# PhD
+  "Doctor of Philosophy", "Department of Econometrics and Business Statistics, Monash University", "Clayton, Australia", "Mar. 2021 - Mar. 2024", "PhD research topic is Advances in Artificial Intelligence for Data Visualization: Developing Computer Vision Models to Automate Reading of Data Plots, with Application to Predictive Model Diagnostics",
   
 # Honours
   "BCom (Hons) in Econometrics", "Monash University", "Clayton, Australia", "Mar. 2020 - Dec. 2020", "First Class Honours, GPA: 3.9/4.0",
@@ -51,8 +53,25 @@ tribble(
 ```{r}
 tribble(
   ~ grants, ~ amount, ~ dates,
+  "Monash Graduate Scholarship, Monash University", "", "2021",
+  "Monash International Tuition Scholarship, Monash University", "", "2021",
+  "Dean’s Honour, Business School, Monsh University", "", "2020",
   "Econometrics Honours Memorial Scholarship, Monash University", "$15,000", "2020") %>% 
   brief_entries(grants, dates, amount)
+```
+
+# Teaching experience
+
+```{r}
+tribble(
+  ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
+  
+# PhD
+  "Tutor", "ETC5521 - Exploratory Data Analysis", "Monash University", "2021 S2", NA,
+  "Tutor", "ETC3250/ETC5250 - Introduction to Machine Learning", "Monash University", "2021 S1", NA,
+  "Assistant Instructor", "Summer Institute in Statistics for Big Data - Module 4: Visualization of Biomedical Big Data", "University of Washington", "Jul 21 - 23, 2021", NA,
+  ) %>% 
+  detailed_entries(degree, dates, uni, loc, details)
 ```
 
 
@@ -71,11 +90,19 @@ tribble(
 # Research experience
 
 ```{r}
-
 tribble(
   ~ name, ~ when, ~ role, ~ details,
   "Using Remote Sensing Data to Understand Fire Ignitions in Victoria during the 2019-2020 Australian Bushfire Season", "2020", "Author", "Honours degree research project, supervised by Prof Di Cook and Emily Dodwell") %>%
   brief_entries(glue::glue("\\textbf{<name>} \\newline <details>", .open = "<", .close = ">"), when, .protect = FALSE)
+```
+
+# Software development
+
+```{r}
+tribble(
+  ~ com, ~ uni, ~ loc, ~ dates, ~ details,
+  "spotoroo: Spatiotemporal Clustering of Satellite Hot Spot Data", "R package", "2021", "Author, Maintainer", NA) %>% 
+  detailed_entries(uni, dates, com, loc, details)
 ```
 
 # Data analysis projects
